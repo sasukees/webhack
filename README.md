@@ -3,7 +3,7 @@ For setup you need to write these commands in termux:
 ```
 apt-get install python3
 apt-get install git
-git clone https://github.com/yan4ikyt/webhack
+git clone https://github.com/denisook/webhack
 cd webhack
 pip3 install requests
 python3 WebHack.py
