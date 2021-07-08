@@ -12,3 +12,5 @@ python3 WebHack.py
 Done!
 To start you need write command: `python3 webhack.py`
 
+Webhack 1.2 ↓↓↓↓↓↓
+https://github.com/denisook/webhack/releases/download/1.2/webhack.zip
