@@ -289,7 +289,7 @@ print("""
 13. Portugal
 14. Singapure
 15. Columbia
-
+16. Romania
 ------Version 1.2------                      
 """)
 num = int(input("country : "))
@@ -639,7 +639,31 @@ if num == 15:
                      count += 1
         except:
             print (" ") 
+if num == 16:
+        print("\n")		
+        os.system(delet)
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0'}       
+            for page in range (0,82):
+			
+                url = ("https://www.insecam.org/en/bycountry/RO/?page="+str(page))
+            
+                res = requests.get(url, headers=headers)
+                findip = re.findall('http://\d+.\d+.\d+.\d+:\d+', res.text)
+                count = 0
+                                
+                for _ in findip:
+                     hasil = findip[count]
 
+                     print ("\033[1;37m",hasil)
+
+                     f = open('logs.txt' , 'a')
+                     f.write(f'{findip}' + '\n')
+                     f.close()
+
+                     count += 1
+        except:
+            print ("") 
 
 print("Готово! Все логи были сохранены в файл logs.txt")
 print("""
